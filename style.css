@@ -1,0 +1,15 @@
+header
+{
+    display: flex;
+}
+
+footer
+{
+    color: white;
+    background-image: url(https://knowindia.india.gov.in/assets/images/home-bottom-bg.jpg);
+}
+
+.foot1
+{
+    display: flex;
+}
