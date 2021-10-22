@@ -1,15 +1,147 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+/* -------------------- Header Section -------------------- */
+
 header
 {
     display: flex;
+    background-color: chocolate;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.logo
+{
+    height: 70px;
+    cursor: pointer;
+}
+
+.menu span
+{
+    background-color: cornsilk;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.menu span:hover
+{
+    background-color: rgb(107, 41, 2);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* -------------------- Main Section -------------------- */
+.map
+{
+    width: 75%;
+}
+
+.states
+{
+    display: flex;
+    margin: 40px;
+}
+
+.card
+{
+    margin: 50px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: lawngreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  /* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+  }
+
+.gujarat
+{
+    margin: 10px;
+}
+
+.delhi
+{
+    margin: 10px;
+    width: 10px;
+}
+
+.punjab
+{
+    margin: 10px;
+}
+
+
+
+/* -------------------- Footer Section -------------------- */
 
 footer
 {
     color: white;
+    padding-top: 50px;
+    padding-left: 20px;
     background-image: url(https://knowindia.india.gov.in/assets/images/home-bottom-bg.jpg);
 }
 
 .foot1
 {
     display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.foothead
+{
+    margin-bottom: 20px;
+}
+
+.quicklinks p, a
+{
+    margin-bottom: 10px;
+    color: wheat;
+    margin-left: 5px;;
+}
+
+.quicklinks a:hover
+{
+    color: rgb(122, 2, 18);
+}
+
+.copy
+{
+    margin-top: 250px;
+    padding-bottom: 20px;
+    margin-left: 43%;
 }
