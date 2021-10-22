@@ -115,14 +115,16 @@ header
 }
   
   /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card:hover
+{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
-  }
+}
   
   /* Add some padding inside the card container */
-.container {
+.container
+{
     padding: 2px 16px;
-  }
+}
 
 .gujarat
 {
@@ -177,6 +179,12 @@ footer
 .quicklinks a:hover
 {
     color: rgb(122, 2, 18);
+}
+
+.mailpic
+{
+    margin-left: 20%;
+    cursor: pointer;
 }
 
 .copy
