@@ -1,11 +1,10 @@
 *
 {
+    /* border: solid black 2px; */
     margin: 0px;
     padding: 0px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
 
 
 
@@ -47,33 +46,73 @@ header
 
 
 
+/* -------------------- Section-1 : Map -------------------- */
 
-
-/* -------------------- Main Section -------------------- */
-.map
+.sec1
 {
-    width: 75%;
+    min-height: 720px;
+    background-image: url('https://www.hdnicewallpapers.com/Walls/Big/Others/India_Traditional_Map_4K_Wallpaper.jpg');
+    background-size: cover;
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+.aboutindia
+{
+    background-color: #D22552;
+    color: white;
+    position: absolute;
+    right: 10px;
+    width: 700px;
+    padding: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-top: 200px;
+    border-radius: 5px;
+}
+
+.explore
+{
+    padding: 5px 10px;
+    margin-top: 50px;
+    border: solid white 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.explore:hover
+{
+    color: rgb(37, 0, 9);
+    border: solid rgb(37, 0, 9) 1px;
+}
+
+
+
+/* -------------------- Section-2 : States -------------------- */
+
+.state-un
+{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 35px;
 }
 
 .states
 {
     display: flex;
-    margin: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .card
 {
-    margin: 50px;
-    padding-bottom: 10px;
+    margin: 30px;
     cursor: pointer;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
     background-color: lawngreen;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-  }
+}
   
   /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -111,6 +150,7 @@ footer
     padding-top: 50px;
     padding-left: 20px;
     background-image: url(https://knowindia.india.gov.in/assets/images/home-bottom-bg.jpg);
+    margin-top: 100px;
 }
 
 .foot1
