@@ -1,3 +1,5 @@
+/* -------------------- Common Header -------------------- */
+
 *
 {
     /* border: solid black 2px; */
@@ -5,10 +7,6 @@
     padding: 0px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-
-
-/* -------------------- Header Section -------------------- */
 
 header
 {
@@ -28,7 +26,7 @@ header
     cursor: pointer;
 }
 
-.menu a                  /* .menu span */
+.menu a
 {
     background-color: cornsilk;
     color: black;
@@ -39,14 +37,26 @@ header
     transition: 0.2s all ease-in-out;
 }
 
-.menu a:hover                  /* .menu span:hover */
+.menu a:hover
 {
     background-color: rgb(107, 41, 2);
     color: rgb(255, 255, 255);
 }
 
 
-/* -------------------- Section-1 : Map -------------------- */
+.pagehead
+{
+    color: #D22552;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+
+/* -------------------- index.html -------------------- */
 
 .sec1
 {
@@ -86,10 +96,6 @@ header
     color: rgb(37, 0, 9);
     border: solid rgb(37, 0, 9) 1px;
 }
-
-
-
-/* -------------------- Section-2 : States -------------------- */
 
 .state-un
 {
@@ -137,15 +143,33 @@ header
 
 
 
-/* -------------------- map.html -------------------- */
 
-.maphead
+
+/* -------------------- aboutindia.html -------------------- */
+.para
 {
-    color: #D22552;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: auto;
+    width: 50%;
+    text-align: justify;
 }
+
+.para p
+{
+    margin: 20px;
+}
+
+.indiadoodle
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 50px;
+}
+
+
+
+/* -------------------- map.html -------------------- */
 
 .googlemap
 {
