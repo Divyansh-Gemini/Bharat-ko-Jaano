@@ -1,0 +1,426 @@
+/* -------------------- Common Header -------------------- */
+
+*
+{
+    /* border: solid black 2px; */
+    margin: 0px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header
+{
+    display: flex;
+    background-color: chocolate;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    height: 70px;
+    cursor: pointer;
+}
+
+.menu a
+{
+    background-color: cornsilk;
+    color: black;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.menu a:hover
+{
+    background-color: rgb(107, 41, 2);
+    color: rgb(255, 255, 255);
+}
+
+
+.pagehead
+{
+    color: #D22552;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+
+/* -------------------- index.html -------------------- */
+
+.sec1
+{
+    min-height: 720px;
+    background-image: url('https://www.hdnicewallpapers.com/Walls/Big/Others/India_Traditional_Map_4K_Wallpaper.jpg');
+    background-size: cover;
+    margin-right: 300px;
+    margin-left: 50px;
+}
+
+.aboutindia
+{
+    background-color: #D22552;
+    color: white;
+    position: absolute;
+    right: 10px;
+    width: 700px;
+    padding: 15px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-top: 200px;
+    border-radius: 5px;
+}
+
+.explore
+{
+    padding: 5px 10px;
+    margin-top: 50px;
+    border: solid white 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.explore:hover
+{
+    color: rgb(37, 0, 9);
+    border: solid rgb(37, 0, 9) 1px;
+}
+
+.state-un
+{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 35px;
+}
+
+.states
+{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card
+{
+    margin: 30px;
+    cursor: pointer;
+    background-color: lawngreen;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.container
+{
+    padding: 3px 16px;
+}
+
+.statepic
+{
+    margin: 10px;
+}
+
+.blank
+{
+    margin-top: 100px;
+}
+
+
+
+
+
+/* -------------------- aboutindia.html -------------------- */
+.para
+{
+    margin: auto;
+    width: 50%;
+    text-align: justify;
+}
+
+.para p
+{
+    margin: 20px;
+}
+
+.indiadoodle
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    width: 50px;
+}
+
+
+
+/* -------------------- map.html -------------------- */
+
+.googlemap
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+
+
+
+
+/* -------------------- Common Footer -------------------- */
+
+footer
+{
+    color: white;
+    padding-top: 50px;
+    padding-left: 20px;
+    background-image: url(https://knowindia.india.gov.in/assets/images/home-bottom-bg.jpg);
+}
+
+.foot1
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.foothead
+{
+    margin-bottom: 20px;
+}
+
+.quicklinks p, a
+{
+    margin-bottom: 10px;
+    color: wheat;
+    margin-left: 5px;;
+}
+
+.quicklinks a:hover
+{
+    color: rgb(122, 2, 18);
+}
+
+.mailpic
+{
+    width: 20%;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.copy
+{
+    margin-top: 250px;
+    padding-bottom: 20px;
+    margin-left: 43%;
+}
+
+
+
+/* ............Popup Box........... */
+
+.popup .overlay
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: rgb(248, 246, 100);
+    border: solid rgb(109, 53, 7) 8px;
+    border-radius: 15px;
+    width: 500px;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn
+{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay
+{
+    display: block;
+}
+
+.popup.active .content
+{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,210%) scale(1);
+}
+
+.popup-head
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.famous
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    text-align: left;
+}
+
+
+ul, li
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/* ...........CSS for Quiz by Srishti........... */
+
+.wrapquiz
+{
+    font-size: 16px;
+    margin: 0;
+    background: linear-gradient(to right top );
+    background-color: #BCE6EB;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+  
+.qab{
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 30px;
+  }
+  .qah{
+    background-color: #0b58a7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+  }
+  
+  .qas{
+    display: none;
+  }
+  
+  .qas.active{
+    display: block;
+  }
+  .qas h4{
+  margin: 0 0 15px;
+  font-size: 20px;
+  }
+  
+  .ans{
+    position: relative;
+    margin-bottom: 10px;
+  
+  }
+  
+  .ans input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .ans span{
+  display: block;
+  padding: 8px 15px;
+  background-color: #bad0c9;
+  border-radius: 15px;
+  transition: all 0.3s ease-out;
+  }
+  
+  .ans:hover span{
+    background-color: #9ab5ac;
+  }
+  
+  .ans input:checked + span{
+    background-color: #f93c3c;
+  }
+  
+  .ans input[valid]:checked + span{
+    background-color: green;
+    color: #fff;
+  }
+  
+  .qaf{
+    padding: 10px 0 0;
+    text-align: right;
+  }
+  
+  .btn1{
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #0b58a7;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  }
+  
+  .btn1:hover
+  {
+    background-color: #064484;
+  }
